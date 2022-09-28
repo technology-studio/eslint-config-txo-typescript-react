@@ -1,0 +1,9 @@
+{
+  "extends": "./src/index.js",
+  "rules": {
+    "prefer-destructuring": "off"
+  },
+  "parserOptions": {
+    "createDefaultProgram": true
+  }
+}
