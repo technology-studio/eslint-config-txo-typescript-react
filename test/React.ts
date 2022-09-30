@@ -17,14 +17,15 @@ export const RulesOfHooksOk = (props: RulesOfHooksProps): null => {
   return null
 }
 
-// export const RulesOfHooksError = (props: RulesOfHooksProps): null => {
-//   if (props.someProp) {
-//     useEffect(function persistForm () {
-//       // localStorage.setItem('formData', name);
-//     })
-//   }
-//   return null
-// }
+export const RulesOfHooksError = (props: RulesOfHooksProps): null => {
+  if (props.someProp) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useEffect(function persistForm () {
+      // localStorage.setItem('formData', name);
+    })
+  }
+  return null
+}
 
 // react-hooks/exhaustive-deps
 type ExhaustiveDepsProps = { someProp?: string }
@@ -37,14 +38,15 @@ export const ExhaustiveDepsOk = (props: ExhaustiveDepsProps): null => {
   return null
 }
 
-// export const ExhaustiveDepsError = (props: ExhaustiveDepsProps): null => {
-//   useEffect(() => {
-//     if (props.someProp) {
-//       // localStorage.setItem('formData', name);
-//     }
-//   }, [])
-//   return null
-// }
+export const ExhaustiveDepsError = (props: ExhaustiveDepsProps): null => {
+  useEffect(() => {
+    if (props.someProp) {
+      // localStorage.setItem('formData', name);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  return null
+}
 
 // TODO: add tests for:
 // react/jsx-first-prop-new-line
