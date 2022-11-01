@@ -24,7 +24,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "eslint-config-txo-typescript": "^3.1.43"
+    "eslint-config-txo-typescript": "^3.1.44"
   },
   "peerDependencies": {
     "eslint-plugin-jsx-a11y": "^6.6.1",
