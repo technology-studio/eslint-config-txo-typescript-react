@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-txo-typescript-react",
-  "version": "1.0.52",
+  "version": "1.0.53",
   "description": "Technology Studio - Eslint typescript react config",
   "main": "src/index.js",
   "repository": {
