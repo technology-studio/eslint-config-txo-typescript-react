@@ -1,3 +1,10 @@
+## [1.0.55](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.0.54...v1.0.55) (2023-01-17)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-react to ^7.32.1 ([2248ed0](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/2248ed0d550a468f81e1a16e65850a5d95801b25))
+
 ## [1.0.54](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.0.53...v1.0.54) (2023-01-17)
 
 
