@@ -1,8 +1,7 @@
 {
   "extends": "./src/index.js",
   "rules": {
-    "prefer-destructuring": "off",
-    "comma-dangle": "off"
+    "prefer-destructuring": "off"
   },
   "parserOptions": {
     "createDefaultProgram": true
