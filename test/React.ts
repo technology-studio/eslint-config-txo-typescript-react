@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 type RulesOfHooksProps = { someProp?: string }
 export const RulesOfHooksOk = (props: RulesOfHooksProps): null => {
   useEffect(() => {
-    if (props.someProp) {
+    if (props.someProp != null && props.someProp !== '') {
       // localStorage.setItem('formData', name);
     }
   })
@@ -18,7 +18,7 @@ export const RulesOfHooksOk = (props: RulesOfHooksProps): null => {
 }
 
 export const RulesOfHooksError = (props: RulesOfHooksProps): null => {
-  if (props.someProp) {
+  if (props.someProp != null && props.someProp !== '') {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(function persistForm () {
       // localStorage.setItem('formData', name);
@@ -31,7 +31,7 @@ export const RulesOfHooksError = (props: RulesOfHooksProps): null => {
 type ExhaustiveDepsProps = { someProp?: string }
 export const ExhaustiveDepsOk = (props: ExhaustiveDepsProps): null => {
   useEffect(() => {
-    if (props.someProp) {
+    if (props.someProp != null && props.someProp !== '') {
       // localStorage.setItem('formData', name);
     }
   }, [props.someProp])
@@ -40,7 +40,7 @@ export const ExhaustiveDepsOk = (props: ExhaustiveDepsProps): null => {
 
 export const ExhaustiveDepsError = (props: ExhaustiveDepsProps): null => {
   useEffect(() => {
-    if (props.someProp) {
+    if (props.someProp != null && props.someProp !== '') {
       // localStorage.setItem('formData', name);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
