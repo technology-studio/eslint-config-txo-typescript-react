@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.0.96...v1.1.0) (2023-07-13)
+
+
+### Features
+
+* update renovate config ([#284](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/284)) ([15a1ce0](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/15a1ce00e8f4d78440722e65901e57d2d9787f39))
+
 ## [1.0.96](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.0.95...v1.0.96) (2023-07-11)
 
 
