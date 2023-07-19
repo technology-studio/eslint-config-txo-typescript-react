@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.1.0...v1.2.0) (2023-07-19)
+
+
+### Features
+
+* add rule override for eslint packages ([#288](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/288)) ([54e7b82](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/54e7b8243976e7d5dd69a2a7fdd74749fbd1ebcc))
+
 ## [1.1.0](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.0.96...v1.1.0) (2023-07-13)
 
 
