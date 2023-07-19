@@ -2,7 +2,7 @@
   "name": "eslint-config-txo-typescript-react",
   "version": "1.2.0",
   "description": "Technology Studio - Eslint typescript react config",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/technology-studio/eslint-config-txo-typescript-react.git"
@@ -18,9 +18,10 @@
     "lint": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx . --fix",
     "git-hook": "yarn -s lint-staged",
-    "test": "yarn lint",
-    "prepare": "husky install",
-    "sanity": "yarn lint && tsc --noEmit && yarn outdated && echo 'success'",
+    "test": "yarn compile && yarn lint",
+    "compile": "tsc",
+    "prepare": "husky install && yarn compile",
+    "sanity": "yarn test && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
