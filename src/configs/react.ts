@@ -10,6 +10,6 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'error',
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-uses-vars': 'error',
-    'react/display-name': 'off'
-  }
+    'react/display-name': 'off',
+  },
 }
