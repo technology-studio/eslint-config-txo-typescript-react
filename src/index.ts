@@ -11,8 +11,8 @@ module.exports = {
     ...[
       './configs/jsx-a11y',
       './configs/react',
-      './configs/redux-saga'
-    ].map(require.resolve)
+      './configs/redux-saga',
+    ].map(relativePath => require.resolve(relativePath)),
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
@@ -20,17 +20,17 @@ module.exports = {
     'redux-saga',
     'react',
     'react-hooks',
-    'jsx-a11y'
+    'jsx-a11y',
   ],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   rules: {
-    strict: 'error'
-  }
+    strict: 'error',
+  },
 }
