@@ -25,7 +25,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "eslint-config-txo-typescript": "^3.3.1"
+    "eslint-config-txo-typescript": "^3.3.2"
   },
   "peerDependencies": {
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -39,8 +39,8 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/react": "^18.2.18",
-    "@typescript-eslint/eslint-plugin": "^6.2.1",
-    "@typescript-eslint/parser": "^6.2.1",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
     "commitizen": "^4.3.0",
     "eslint": "^8.46.0",
     "eslint-formatter-pretty": "^5.0.0",
