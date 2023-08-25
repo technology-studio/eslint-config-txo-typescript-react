@@ -60,7 +60,7 @@
     "redux-saga": "^1.2.3",
     "semantic-release": "^21.1.1",
     "semantic-release-slack-bot": "^4.0.2",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "config": {
     "commitizen": {
