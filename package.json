@@ -18,8 +18,9 @@
     "lint": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx . --fix",
     "git-hook": "yarn -s lint-staged",
-    "test": "yarn compile && yarn lint",
+    "test": "yarn compile && yarn lint && yarn noop",
     "compile": "tsc",
+    "noop": ":",
     "prepare": "husky install && yarn compile",
     "sanity": "yarn test && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release"
