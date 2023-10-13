@@ -11,13 +11,11 @@ module.exports = {
     ...[
       './configs/jsx-a11y',
       './configs/react',
-      './configs/redux-saga',
     ].map(relativePath => require.resolve(relativePath)),
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
-    'redux-saga',
     'react',
     'react-hooks',
     'jsx-a11y',
