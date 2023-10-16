@@ -1,3 +1,10 @@
+## [1.2.54](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.2.53...v1.2.54) (2023-10-13)
+
+
+### Bug fixes
+
+* remove redux-saga plugin and config ([#375](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/375)) ([e9cc576](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/e9cc576f05e2e3e022ae93b42c4c462a93da1b5f))
+
 ## [1.2.53](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.2.52...v1.2.53) (2023-10-11)
 
 
