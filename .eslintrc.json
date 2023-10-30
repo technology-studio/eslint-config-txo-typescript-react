@@ -12,6 +12,10 @@
     "prefer-destructuring": "off"
   },
   "parserOptions": {
-    "createDefaultProgram": true
+    "project": [
+      "./tsconfig.json",
+      "./tsconfig.test.json",
+      "./__tests__/tsconfig.json"
+    ]
   }
 }
