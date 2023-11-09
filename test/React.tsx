@@ -4,7 +4,7 @@
  * @Copyright: Technology Studio
 **/
 
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 
 // react-hooks/rules-of-hooks
 type RulesOfHooksProps = { someProp?: string }
@@ -48,7 +48,24 @@ export const ExhaustiveDepsError = (props: ExhaustiveDepsProps): null => {
   return null
 }
 
+const Component = (_props: { test: string, test2: { a: string, b: string } }): null => null
+
+export const FirstPropNewLineOk = (): JSX.Element => (
+  <Component
+    test='test'
+    test2={{
+      a: 'abc',
+      b: 'def',
+    }}
+  />
+)
+
+export const FirstPropNewLineError = (): JSX.Element => (
+  // eslint-disable-next-line react/jsx-first-prop-new-line
+  <Component test='test'
+    test2={{ a: 'abc', b: 'def' }} />
+)
+
 // TODO: add tests for:
-// react/jsx-first-prop-new-line
 // react/jsx-uses-vars
 // react/display-name
