@@ -1,3 +1,22 @@
+## [2.0.0](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.2.60...v2.0.0) (2023-11-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to eslint flat config
+
+### Features
+
+* migrate to eslint flat config ([#409](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/409)) ([e91d6ad](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/e91d6adb86e83f1040e2e3e094a73883c8a28723))
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint to ^8.53.0 ([ca97452](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/ca97452d6aedef73fab35e45bff43d07d035dfe1))
+* **deps:** update dependency eslint-plugin-n to ^16.3.0 ([f756ae1](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/f756ae15b5ee6f9fb67efbb92901a33b9494c17f))
+* **deps:** update eslint txo packages ([5ba9073](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/5ba907350b9158729db968bd7a1f5fe4aa56087f))
+* **deps:** update eslint txo packages to ^6.10.0 ([4260a1b](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/4260a1bedd35b1729ddc3a5c95f81e0c82d7af36))
+
 ## [1.2.60](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v1.2.59...v1.2.60) (2023-10-27)
 
 
