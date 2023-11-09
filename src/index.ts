@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * @Author: Rostislav Simonik <rostislav.simonik@technologystudio.sk>
  * @Author: Erik Slovak <erik.slovak@technologystudio.sk>
@@ -5,30 +8,30 @@
  * @Copyright: Technology Studio
 **/
 
-module.exports = {
-  extends: [
-    'txo-typescript',
-    ...[
-      './configs/jsx-a11y',
-      './configs/react',
-    ].map(relativePath => require.resolve(relativePath)),
-  ],
-  parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'react-hooks',
-    'jsx-a11y',
-  ],
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
+import type { Linter } from 'eslint'
+
+import { jsxA11yRules } from './configs/jsx-a11y'
+import { reactRules } from './configs/react'
+
+const txoConfig = require('eslint-config-txo-typescript')
+const react = require('eslint-plugin-react')
+const reactHooksPlugin = require('eslint-plugin-react-hooks')
+const jsxA11yPlugin = require('eslint-plugin-jsx-a11y')
+
+const config: Linter.FlatConfig[] = [
+  ...txoConfig.default,
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    rules: {
+      ...jsxA11yRules,
+      ...reactRules,
     },
-    project: './tsconfig.json',
+    plugins: {
+      'jsx-a11y': jsxA11yPlugin,
+      'react-hooks': reactHooksPlugin,
+      react,
+    },
   },
-  rules: {
-    strict: 'error',
-  },
-}
+]
+
+export default config
