@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.2...v2.0.3) (2023-11-13)
+
+
+### Bug fixes
+
+* ignore react-native packages due to flow use ([#413](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/413)) ([7f3440d](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/7f3440dfdc75d1128044cb3df1018a1a68ca0740))
+
 ## [2.0.2](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.1...v2.0.2) (2023-11-10)
 
 
