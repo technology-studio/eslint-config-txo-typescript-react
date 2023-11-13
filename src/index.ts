@@ -31,6 +31,12 @@ const config: Linter.FlatConfig[] = [
       'react-hooks': reactHooksPlugin,
       react,
     },
+    settings: {
+      'import/ignore': [
+        'react-native',
+        'react-native-keychain',
+      ],
+    },
   },
 ]
 
