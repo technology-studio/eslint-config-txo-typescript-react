@@ -1,3 +1,10 @@
+## [2.0.12](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.11...v2.0.12) (2023-12-05)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-config-txo-typescript to ^4.0.14 ([bb3f8b4](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/bb3f8b4cc52eea20b1599f78008b24794000ca74))
+
 ## [2.0.11](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.10...v2.0.11) (2023-12-02)
 
 
