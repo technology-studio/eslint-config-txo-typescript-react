@@ -34,7 +34,7 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "@txo/commitlint": "^1.0.11",
+    "@txo/commitlint": "^1.0.12",
     "@txo/semantic-release": "^1.0.8",
     "@txo/tsconfig": "^1.1.1",
     "@types/eslint": "^8.56.2",
