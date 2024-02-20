@@ -39,7 +39,7 @@
     "@txo/tsconfig": "^1.1.1",
     "@types/eslint": "^8.56.2",
     "@types/jest": "^29.5.12",
-    "@types/react": "^18.2.56",
+    "@types/react": "^18.2.57",
     "husky": "^8.0.3",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.2",
