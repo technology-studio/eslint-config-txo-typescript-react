@@ -37,7 +37,7 @@
     "@txo/commitlint": "^1.0.13",
     "@txo/semantic-release": "^1.0.8",
     "@txo/tsconfig": "^1.1.1",
-    "@types/eslint": "^8.56.3",
+    "@types/eslint": "^8.56.5",
     "@types/jest": "^29.5.12",
     "@types/react": "^18.2.58",
     "husky": "^8.0.3",
