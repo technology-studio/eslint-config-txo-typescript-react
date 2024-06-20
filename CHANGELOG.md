@@ -1,3 +1,10 @@
+## [2.0.62](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.61...v2.0.62) (2024-06-20)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-jsx-a11y to ^6.9.0 ([c036b42](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/c036b42876541862dbb8c36b2ced4f028fc09dd1))
+
 ## [2.0.61](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.60...v2.0.61) (2024-06-19)
 
 
