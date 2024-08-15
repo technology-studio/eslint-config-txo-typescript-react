@@ -1,3 +1,15 @@
+## [2.0.68](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.67...v2.0.68) (2024-08-15)
+
+
+### CI
+
+* add lint command for CI ([#595](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/595)) ([f327936](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/f327936b34c15e73e3eb409a4a7659f8f93afb24))
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-config-txo-typescript to ^4.0.66 ([affb3ea](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/affb3ea8ee84a66446887320e07ce0f0f69d6e9e))
+
 ## [2.0.67](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.66...v2.0.67) (2024-08-01)
 
 
