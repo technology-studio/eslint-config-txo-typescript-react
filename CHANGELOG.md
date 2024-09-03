@@ -1,3 +1,15 @@
+## [2.0.69](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.68...v2.0.69) (2024-09-03)
+
+
+### CI
+
+* update URL for code-quality ([#602](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/602)) ([ddf531d](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/ddf531d79e287f45ea1af6a9c4ae4e6e12c657b3))
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-react to ^7.35.1 ([5763356](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/5763356e6191c3efe8d92a4d2ef348952f968d52))
+
 ## [2.0.68](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.67...v2.0.68) (2024-08-15)
 
 
