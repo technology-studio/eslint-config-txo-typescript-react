@@ -1,3 +1,15 @@
+## [2.0.72](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.71...v2.0.72) (2024-09-12)
+
+
+### CI
+
+* rename workflows ([#609](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/609)) ([d26c05b](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/d26c05bc5dc83d2aee773fa5e0b9795344aa8254))
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-react to ^7.36.0 ([f97fc7a](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/f97fc7aba854a8ccb2abd3137b9c987da7181cbb))
+
 ## [2.0.71](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.70...v2.0.71) (2024-09-04)
 
 
