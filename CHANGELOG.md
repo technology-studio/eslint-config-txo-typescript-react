@@ -1,3 +1,10 @@
+## [2.0.78](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.77...v2.0.78) (2024-10-11)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-react-hooks to v5 ([3cfae85](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/3cfae85e7a26b08676d8c1b55ffadc03c86f5a8b))
+
 ## [2.0.77](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.76...v2.0.77) (2024-10-09)
 
 
