@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * @Author: Rostislav Simonik <rostislav.simonik@technologystudio.sk>
  * @Author: Erik Slovak <erik.slovak@technologystudio.sk>
@@ -13,31 +13,25 @@ import type { Linter } from 'eslint'
 import { jsxA11yRules } from './configs/jsx-a11y'
 import { reactRules } from './configs/react'
 
-const txoConfig = require('eslint-config-txo-typescript')
-const react = require('eslint-plugin-react')
-const reactHooksPlugin = require('eslint-plugin-react-hooks')
-const jsxA11yPlugin = require('eslint-plugin-jsx-a11y')
+const eslintPluginReact = require('eslint-plugin-react')
+const eslintPluginReactHooks = require('eslint-plugin-react-hooks')
+const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y')
 
-const config: Linter.FlatConfig[] = [
-  ...txoConfig.default,
-  {
-    files: ['**/*.ts', '**/*.tsx'],
-    rules: {
-      ...jsxA11yRules,
-      ...reactRules,
-    },
-    plugins: {
-      'jsx-a11y': jsxA11yPlugin,
-      'react-hooks': reactHooksPlugin,
-      react,
-    },
-    settings: {
-      'import/ignore': [
-        'react-native',
-        'react-native-keychain',
-      ],
-    },
+export const reactConfig: Linter.Config = {
+  rules: {
+    ...jsxA11yRules,
+    ...reactRules,
+    ...eslintPluginReactHooks.configs.recommended.rules,
   },
-]
-
-export default config
+  plugins: {
+    'jsx-a11y': eslintPluginJsxA11y,
+    'react-hooks': eslintPluginReactHooks,
+    'react': eslintPluginReact,
+  },
+  settings: {
+    'import/ignore': [
+      'react-native',
+      'react-native-keychain',
+    ],
+  },
+}

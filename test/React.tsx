@@ -20,7 +20,7 @@ export const RulesOfHooksOk = (props: RulesOfHooksProps): null => {
 export const RulesOfHooksError = (props: RulesOfHooksProps): null => {
   if (props.someProp != null && props.someProp !== '') {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    useEffect(function persistForm () {
+    useEffect(function persistForm() {
       // localStorage.setItem('formData', name);
     })
   }
@@ -43,14 +43,14 @@ export const ExhaustiveDepsError = (props: ExhaustiveDepsProps): null => {
     if (props.someProp != null && props.someProp !== '') {
       // localStorage.setItem('formData', name);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return null
 }
 
 const Component = (_props: { test: string, test2: { a: string, b: string } }): null => null
 
-export const FirstPropNewLineOk = (): JSX.Element => (
+export const FirstPropNewLineOk = (): React.JSX.Element => (
   <Component
     test='test'
     test2={{
@@ -60,10 +60,11 @@ export const FirstPropNewLineOk = (): JSX.Element => (
   />
 )
 
-export const FirstPropNewLineError = (): JSX.Element => (
-  // eslint-disable-next-line react/jsx-first-prop-new-line
+export const FirstPropNewLineError = (): React.JSX.Element => (
+  // eslint-disable-next-line @stylistic/jsx-first-prop-new-line
   <Component test='test'
-    test2={{ a: 'abc', b: 'def' }} />
+    test2={{ a: 'abc', b: 'def' }}
+  />
 )
 
 // TODO: add tests for:
