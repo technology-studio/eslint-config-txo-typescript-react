@@ -4,8 +4,6 @@
  * @Copyright: Technology Studio
 **/
 
-import { compilerOptions } from './tsconfig.json'
-
 import { defaults } from 'jest-config'
 
 export default {
