@@ -17,15 +17,18 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "tsc",
-    "git-hook": "yarn -s lint",
+    "build:clean": "yarn rimraf lib",
+    "build:lib": "yarn tsc",
+    "build:watch": "yarn tsc --watch",
+    "build": "yarn build:clean && yarn build:lib",
+    "coverage": "jest --coverage && open coverage/lcov-report/index.html || xdg-open coverage/lcov-report/index.html",
     "lint:ci": "yarn lint",
     "lint:fix": "eslint . --fix",
     "lint": "eslint --max-warnings 0 .",
-    "ncu-all": "ncu -i",
     "prepare": "husky && yarn build",
-    "sanity": "yarn build && yarn lint:ci && yarn outdated && echo 'success'",
+    "sanity": "yarn build && yarn lint:ci && tsc --noEmit && yarn test --coverage && echo 'success'",
     "semantic-release": "semantic-release",
+    "test:watch": "concurrently \"yarn build:watch\" \"yarn test --watch\"",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "type-check": "tsc --noEmit"
   },
@@ -49,6 +52,7 @@
     "jest": "^29.7.0",
     "lint-staged": "^15.2.10",
     "react": "^18.3.1",
+    "rimraf": "^6.0.1",
     "ts-jest": "^29.2.5",
     "typescript": "^5.6.3"
   }
