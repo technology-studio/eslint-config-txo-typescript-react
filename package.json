@@ -3,6 +3,8 @@
   "version": "2.0.82",
   "description": "Technology Studio - Eslint typescript react config",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/technology-studio/eslint-config-txo-typescript-react.git"
@@ -31,7 +33,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "eslint-config-txo-typescript": "^4.0.70",
+    "eslint-config-txo-typescript": "^6.0.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0"
@@ -39,8 +41,8 @@
   "devDependencies": {
     "@txo/commitlint": "^1.0.19",
     "@txo/semantic-release": "^2.0.9",
-    "@txo/tsconfig": "^1.1.1",
-    "@types/eslint": "^8.56.12",
+    "@txo/tsconfig": "^2.0.0",
+    "@types/eslint": "^9.6.1",
     "@types/jest": "^29.5.14",
     "@types/react": "^18.3.12",
     "husky": "^9.1.7",

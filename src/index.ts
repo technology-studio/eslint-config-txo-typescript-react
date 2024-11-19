@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * @Author: Rostislav Simonik <rostislav.simonik@technologystudio.sk>
  * @Author: Erik Slovak <erik.slovak@technologystudio.sk>
@@ -8,14 +5,16 @@
  * @Copyright: Technology Studio
 **/
 
-import type { Linter } from 'eslint'
+import type {
+  ESLint,
+  Linter,
+} from 'eslint'
+import eslintPluginReact from 'eslint-plugin-react'
+import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
+import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y'
 
-import { jsxA11yRules } from './configs/jsx-a11y'
-import { reactRules } from './configs/react'
-
-const eslintPluginReact = require('eslint-plugin-react')
-const eslintPluginReactHooks = require('eslint-plugin-react-hooks')
-const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y')
+import { jsxA11yRules } from './configs/jsx-a11y.js'
+import { reactRules } from './configs/react.js'
 
 export const reactConfig: Linter.Config = {
   rules: {
@@ -26,7 +25,8 @@ export const reactConfig: Linter.Config = {
   plugins: {
     'jsx-a11y': eslintPluginJsxA11y,
     'react-hooks': eslintPluginReactHooks,
-    'react': eslintPluginReact,
+    // TODO: remove type assertion after types are fixed in eslint-plugin-react - https://github.com/jsx-eslint/eslint-plugin-react/pull/3840
+    'react': eslintPluginReact as ESLint.Plugin,
   },
   settings: {
     'import/ignore': [

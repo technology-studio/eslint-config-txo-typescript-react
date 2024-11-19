@@ -1,14 +1,14 @@
-const {
+import {
   typescriptConfigList,
   stylisticConfig,
-} = require('eslint-config-txo-typescript')
-const typescriptEslint = require('typescript-eslint')
-const {
+} from 'eslint-config-txo-typescript'
+import typescriptEslint from 'typescript-eslint'
+import {
   reactConfig,
-} = require('./lib')
+} from './lib/index.js'
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-const config = typescriptEslint.config(
+export default typescriptEslint.config(
   {
     files: ['**/*.ts', '**/*.tsx'],
     extends: [
@@ -25,5 +25,3 @@ const config = typescriptEslint.config(
     ]
   }
 )
-
-module.exports = config

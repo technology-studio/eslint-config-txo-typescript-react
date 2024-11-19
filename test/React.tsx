@@ -19,7 +19,7 @@ export const RulesOfHooksOk = (props: RulesOfHooksProps): null => {
 
 export const RulesOfHooksError = (props: RulesOfHooksProps): null => {
   if (props.someProp != null && props.someProp !== '') {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
+    // eslint-disable-next-line react-hooks/rules-of-hooks -- validation on case when rule should be reported
     useEffect(function persistForm() {
       // localStorage.setItem('formData', name);
     })
@@ -43,7 +43,7 @@ export const ExhaustiveDepsError = (props: ExhaustiveDepsProps): null => {
     if (props.someProp != null && props.someProp !== '') {
       // localStorage.setItem('formData', name);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- validation on case when rule should be reported
   }, [])
   return null
 }
@@ -61,7 +61,7 @@ export const FirstPropNewLineOk = (): React.JSX.Element => (
 )
 
 export const FirstPropNewLineError = (): React.JSX.Element => (
-  // eslint-disable-next-line @stylistic/jsx-first-prop-new-line
+  // eslint-disable-next-line @stylistic/jsx-first-prop-new-line -- validation on case when rule should be reported
   <Component test='test'
     test2={{ a: 'abc', b: 'def' }}
   />

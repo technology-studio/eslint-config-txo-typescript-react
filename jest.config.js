@@ -4,11 +4,11 @@
  * @Copyright: Technology Studio
 **/
 
-const { compilerOptions } = require('./tsconfig.json');
+import { compilerOptions } from './tsconfig.json'
 
-const { defaults } = require('jest-config');
+import { defaults } from 'jest-config'
 
-module.exports = {
+export default {
   preset: 'ts-jest',
   testEnvironment: 'node',
   testMatch: [

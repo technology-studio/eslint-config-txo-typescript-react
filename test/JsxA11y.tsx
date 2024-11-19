@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* eslint-disable no-console -- we use console.log just as an example code (it's never executed here) */
 /**
  * @Author: Erik Slovak <erik.slovak@technologystudio.sk>
  * @Date: 2022-08-11T16:08:42+02:00
@@ -16,7 +16,7 @@ export const AriaPropsOk = (): React.JSX.Element => (
 )
 
 export const AriaPropsError = (): React.JSX.Element => (
-  // eslint-disable-next-line jsx-a11y/aria-props
+  // eslint-disable-next-line jsx-a11y/aria-props -- validation on case when rule should be reported
   <button aria-labeled='Close' aria-hidden='true'>Close</button>
 )
 
@@ -29,7 +29,7 @@ export const LabelHasAssociatedControlOk = (): React.JSX.Element => (
 )
 
 export const LabelHasAssociatedControlError = (): React.JSX.Element => (
-  // eslint-disable-next-line jsx-a11y/label-has-associated-control
+  // eslint-disable-next-line jsx-a11y/label-has-associated-control -- validation on case when rule should be reported
   <label>Name</label>
 )
 
@@ -45,7 +45,7 @@ export const MouseEventsHaveKeyEventsOk = (): React.JSX.Element => (
 )
 
 export const MouseEventsHaveKeyEventsError = (): React.JSX.Element => (
-  // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
+  // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events -- validation on case when rule should be reported
   <div onMouseOver={() => { console.log('Mouse over') }}>
     Hover here
   </div>
@@ -57,6 +57,6 @@ export const RoleSupportsAriaPropsOk = (): React.JSX.Element => (
 )
 
 export const RoleSupportsAriaPropsError = (): React.JSX.Element => (
-  // eslint-disable-next-line jsx-a11y/role-supports-aria-props
+  // eslint-disable-next-line jsx-a11y/role-supports-aria-props -- validation on case when rule should be reported
   <div role='img' aria-pressed='true'>Not an interactive element</div>
 )
