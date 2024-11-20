@@ -1,5 +1,5 @@
 {
-  "extends": "@txo/tsconfig",
+  "extends": "@txo/tsconfig-cjs",
   "compilerOptions": {
     "noEmit": false,
     "outDir": "lib"
