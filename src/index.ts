@@ -25,7 +25,7 @@ export const reactConfig: Linter.Config = {
   plugins: {
     'jsx-a11y': eslintPluginJsxA11y,
     'react-hooks': eslintPluginReactHooks,
-    // TODO: remove type assertion after types are fixed in eslint-plugin-react - https://github.com/jsx-eslint/eslint-plugin-react/pull/3840
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- TODO: remove type assertion after types are fixed in eslint-plugin-react - https://github.com/jsx-eslint/eslint-plugin-react/pull/3840
     'react': eslintPluginReact as ESLint.Plugin,
   },
   settings: {

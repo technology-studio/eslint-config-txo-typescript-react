@@ -7,7 +7,7 @@ import {
   reactConfig,
 } from './lib/index.js'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default typescriptEslint.config(
   {
     files: ['**/*.ts', '**/*.tsx'],

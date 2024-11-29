@@ -1,5 +1,5 @@
 {
-  "extends": "@txo/tsconfig-cjs",
+  "extends": "@txo/tsconfig",
   "compilerOptions": {
     "declaration": true,
     "noEmit": false,
