@@ -1,3 +1,20 @@
+## [3.0.0](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.82...v3.0.0) (2024-11-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* move to ESM and eslint v9 (#641)
+
+### CI
+
+* add synchronize to PR workflow ([#638](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/638)) ([8059ac3](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/8059ac3cba53380e286638435f73b7ebc4c0017d))
+* update pr and release workflows ([#635](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/635)) ([1d60c92](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/1d60c927447b17817486c856bd9a049102044f14))
+
+
+### Features
+
+* move to ESM and eslint v9 ([#641](https://github.com/technology-studio/eslint-config-txo-typescript-react/issues/641)) ([26b06e8](https://github.com/technology-studio/eslint-config-txo-typescript-react/commit/26b06e849e3ff6a7f1b0d1c9f20f979ad912fc63))
+
 ## [2.0.82](https://github.com/technology-studio/eslint-config-txo-typescript-react/compare/v2.0.81...v2.0.82) (2024-11-04)
 
 
