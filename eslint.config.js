@@ -1,16 +1,27 @@
-const txoConfig = require('./lib/index.js')
+import {
+  typescriptConfigList,
+  stylisticConfig,
+} from 'eslint-config-txo-typescript'
+import typescriptEslint from 'typescript-eslint'
+import {
+  reactConfig,
+} from './lib/index.js'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-const config = [
-  ...txoConfig.default,
+/** @type {import('eslint').Linter.Config[]} */
+export default typescriptEslint.config(
   {
-    files: ['test/**/*.ts', 'test/**/*.tsx'],
-    languageOptions: {
-      parserOptions: {
-        project: './tsconfig.test.json'
-      }
-    }
+    files: ['**/*.ts', '**/*.tsx'],
+    extends: [
+      ...typescriptConfigList,
+      stylisticConfig,
+      reactConfig,
+    ]
+  },
+  {
+    ignores: [
+      'coverage',
+      'lib',
+      'node_modules',
+    ]
   }
-]
-
-module.exports = config
+)

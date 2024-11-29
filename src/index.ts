@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * @Author: Rostislav Simonik <rostislav.simonik@technologystudio.sk>
  * @Author: Erik Slovak <erik.slovak@technologystudio.sk>
@@ -8,36 +5,27 @@
  * @Copyright: Technology Studio
 **/
 
-import type { Linter } from 'eslint'
+import type {
+  ESLint,
+  Linter,
+} from 'eslint'
+import eslintPluginReact from 'eslint-plugin-react'
+import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
+import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y'
 
-import { jsxA11yRules } from './configs/jsx-a11y'
-import { reactRules } from './configs/react'
+import { jsxA11yRules } from './configs/jsx-a11y.js'
+import { reactRules } from './configs/react.js'
 
-const txoConfig = require('eslint-config-txo-typescript')
-const react = require('eslint-plugin-react')
-const reactHooksPlugin = require('eslint-plugin-react-hooks')
-const jsxA11yPlugin = require('eslint-plugin-jsx-a11y')
-
-const config: Linter.FlatConfig[] = [
-  ...txoConfig.default,
-  {
-    files: ['**/*.ts', '**/*.tsx'],
-    rules: {
-      ...jsxA11yRules,
-      ...reactRules,
-    },
-    plugins: {
-      'jsx-a11y': jsxA11yPlugin,
-      'react-hooks': reactHooksPlugin,
-      react,
-    },
-    settings: {
-      'import/ignore': [
-        'react-native',
-        'react-native-keychain',
-      ],
-    },
+export const reactConfig: Linter.Config = {
+  rules: {
+    ...eslintPluginReactHooks.configs.recommended.rules,
+    ...jsxA11yRules,
+    ...reactRules,
   },
-]
-
-export default config
+  plugins: {
+    'jsx-a11y': eslintPluginJsxA11y,
+    'react-hooks': eslintPluginReactHooks,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- TODO: remove type assertion after types are fixed in eslint-plugin-react - https://github.com/jsx-eslint/eslint-plugin-react/pull/3840
+    'react': eslintPluginReact as ESLint.Plugin,
+  },
+}

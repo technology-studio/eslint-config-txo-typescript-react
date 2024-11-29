@@ -9,7 +9,7 @@ import type { Linter } from 'eslint'
 export const reactRules: Linter.RulesRecord = {
   'react-hooks/rules-of-hooks': 'error',
   'react-hooks/exhaustive-deps': 'error',
-  'react/jsx-first-prop-new-line': ['error', 'multiline'],
+  '@stylistic/jsx-first-prop-new-line': ['error', 'multiline'], // TODO: remove after migrating to prettier
   'react/jsx-uses-vars': 'error',
   'react/display-name': 'off',
 }

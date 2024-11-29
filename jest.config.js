@@ -4,18 +4,15 @@
  * @Copyright: Technology Studio
 **/
 
-const { compilerOptions } = require('./tsconfig.json');
+import { defaults } from 'jest-config'
 
-const { defaults } = require('jest-config');
-
-module.exports = {
+export default {
   preset: 'ts-jest',
+  cache: true,
+  cacheDirectory: '<rootDir>/node_modules/.cache/jest',
   testEnvironment: 'node',
   testMatch: [
     '<rootDir>/__tests__/Tests/**/?(*.)(spec|test).ts'
-  ],
-  transformIgnorePatterns: [
-    '/node_modules/(?!@txo).+\\.js$'
   ],
   testPathIgnorePatterns: [
     '/node_modules/'
@@ -28,7 +25,7 @@ module.exports = {
   ],
   transform: {
     '^.+\\.tsx?$': ['ts-jest', {
-      tsconfig: './__tests__/tsconfig.json'
+      tsconfig: '<rootDir>/__tests__/tsconfig.json'
     }]
   },
 }
