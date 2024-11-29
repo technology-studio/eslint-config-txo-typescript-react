@@ -18,20 +18,14 @@ import { reactRules } from './configs/react.js'
 
 export const reactConfig: Linter.Config = {
   rules: {
+    ...eslintPluginReactHooks.configs.recommended.rules,
     ...jsxA11yRules,
     ...reactRules,
-    ...eslintPluginReactHooks.configs.recommended.rules,
   },
   plugins: {
     'jsx-a11y': eslintPluginJsxA11y,
     'react-hooks': eslintPluginReactHooks,
     // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- TODO: remove type assertion after types are fixed in eslint-plugin-react - https://github.com/jsx-eslint/eslint-plugin-react/pull/3840
     'react': eslintPluginReact as ESLint.Plugin,
-  },
-  settings: {
-    'import/ignore': [
-      'react-native',
-      'react-native-keychain',
-    ],
   },
 }
