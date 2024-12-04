@@ -6,7 +6,6 @@
 **/
 
 import type {
-  ESLint,
   Linter,
 } from 'eslint'
 import eslintPluginReact from 'eslint-plugin-react'
@@ -25,7 +24,7 @@ export const reactConfig: Linter.Config = {
   plugins: {
     'jsx-a11y': eslintPluginJsxA11y,
     'react-hooks': eslintPluginReactHooks,
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion -- TODO: remove type assertion after types are fixed in eslint-plugin-react - https://github.com/jsx-eslint/eslint-plugin-react/pull/3840
-    'react': eslintPluginReact as ESLint.Plugin,
+    // @ts-expect-error -- TODO: eslint-plugin-react has broken types, remove when new version is published - https://github.com/jsx-eslint/eslint-plugin-react/pull/3840
+    'react': eslintPluginReact,
   },
 }
