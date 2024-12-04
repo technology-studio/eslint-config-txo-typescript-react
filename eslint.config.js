@@ -1,14 +1,14 @@
 import {
   typescriptConfigList,
   stylisticConfig,
+  typescriptEslintConfig
 } from 'eslint-config-txo-typescript'
-import typescriptEslint from 'typescript-eslint'
 import {
   reactConfig,
 } from './lib/index.js'
 
 /** @type {import('eslint').Linter.Config[]} */
-export default typescriptEslint.config(
+export default typescriptEslintConfig(
   {
     files: ['**/*.ts', '**/*.tsx'],
     extends: [
