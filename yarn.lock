@@ -2942,10 +2942,10 @@ eslint-config-love@^109.0.0:
     eslint-plugin-promise "^7.0.0"
     typescript-eslint "^8.15.0"
 
-eslint-config-txo-typescript@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript/-/eslint-config-txo-typescript-7.1.0.tgz#c2fb1624ac961c81dcad69cad175bfed9a07778a"
-  integrity sha512-TwY/UpS4qLxPID1QkKBNDlACgioR6VLXG11A/9AS4FLWf6bHTgEzG/hVQ4XOD83jio32r9S0HOzl53bvytw9SA==
+eslint-config-txo-typescript@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript/-/eslint-config-txo-typescript-7.2.0.tgz#4d79abd1286453dd5a0d862aeec4c86fd2c8cec5"
+  integrity sha512-ltDR4NpzARbQCsduGFUNmy+t3D1nBTDkW11S+ivxWp7MIxAuwb1yJQMlxK7YxRXM/QvCQuU+Yik9NwAWX4J3dw==
   dependencies:
     "@eslint-community/eslint-plugin-eslint-comments" "^4.4.1"
     "@stylistic/eslint-plugin" "^2.11.0"
@@ -2959,6 +2959,7 @@ eslint-config-txo-typescript@^7.1.0:
     eslint-plugin-promise "^7.2.1"
     globals "^15.13.0"
     typescript-eslint "^8.17.0"
+    yargs "^17.7.2"
 
 eslint-import-resolver-node@^0.3.9:
   version "0.3.9"
@@ -3081,10 +3082,10 @@ eslint-plugin-promise@^7.0.0, eslint-plugin-promise@^7.2.1:
   dependencies:
     "@eslint-community/eslint-utils" "^4.4.0"
 
-eslint-plugin-react-hooks@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.0.0.tgz#72e2eefbac4b694f5324154619fee44f5f60f101"
-  integrity sha512-hIOwI+5hYGpJEc4uPRmz2ulCjAGD/N13Lukkh8cLV0i2IRk/bdZDYjgLVHj+U9Z704kLIdIO6iueGvxNur0sgw==
+eslint-plugin-react-hooks@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.1.0.tgz#3d34e37d5770866c34b87d5b499f5f0b53bf0854"
+  integrity sha512-mpJRtPgHN2tNAvZ35AMfqeB3Xqeo273QxrHJsbBEPWODRM4r0yB6jfoROqKEYrOn27UtRPpcpHc2UqyBSuUNTw==
 
 eslint-plugin-react@^7.37.2:
   version "7.37.2"
@@ -8243,7 +8244,7 @@ yargs@^16.0.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yargs@^17.0.0, yargs@^17.3.1, yargs@^17.5.1:
+yargs@^17.0.0, yargs@^17.3.1, yargs@^17.5.1, yargs@^17.7.2:
   version "17.7.2"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.7.2.tgz#991df39aca675a192b816e1e0363f9d75d2aa269"
   integrity sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==
