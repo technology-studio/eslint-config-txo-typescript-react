@@ -24,7 +24,6 @@ export const reactConfig: Linter.Config = {
   plugins: {
     'jsx-a11y': eslintPluginJsxA11y,
     'react-hooks': eslintPluginReactHooks,
-    // @ts-expect-error -- TODO: eslint-plugin-react has broken types, remove when new version is published - https://github.com/jsx-eslint/eslint-plugin-react/pull/3840
     'react': eslintPluginReact,
   },
 }
